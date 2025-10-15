@@ -1,19 +1,25 @@
 {
-  "@context": "https://www.w3.org/ns/did/v1",
+  "@context":[
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
   "id": "did:web:flondonoh.github.io:gaiax_technicaladvisor_exercise",
   "verificationMethod": [
     {
-      "id": "did:web:flondonoh.github.io:gaiax_technicaladvisor_exercise#key-1",
+      "@context":"https://w3c-ccg.github.io/lds-jws2020/contexts/v1/",
+      "id": "did:web:flondonoh.github.io:gaiax_technicaladvisor_exercise#X509-JWK2020",
       "type": "JsonWebKey2020",
       "controller": "did:web:flondonoh.github.io:gaiax_technicaladvisor_exercise",
       "publicKeyJwk": {
         "kty": "RSA",
         "n": "lqTk3Jq838M0D4Iskmw6hJcDNcIYMu0vnt-CNRem66BcGnTJq00GRRZMjrq5gd_G5XxVrhMByb5p0F_muBJBgflxWZV4irtj3zTXlzsUmdX8j8vJoAnxq7JXKliP89z8O1856OJb0o2OV7Fz4F03JUSrmzsuNWwZcu_n5eI0u0KW-gMPfsmWrD5KNsKWi34uOPYSwAHt5ohtBi-dfyz1kq499TIe6-Hkd3Xjz9_O7Ewn7nyuqmfIVBOG7ugRjajN0QbRS40L1qat9QFDv7L6uee1PCHLU-QtIJ018g8bE1spiXCE4D-_kssyOb1OvBkLAh1LgEsy7z3V0TT8CWlSyQ",
-        "e": "AQAB"
-      },
-      "x5c": [
-        "MIIDIzCCAgugAwIBAgIUaDtq2tZsOcslBGSB1DEXYW8+NqgwDQYJKoZIhvcNAQELBQAwQTELMAkGA1UEBhMCREUxFDASBgNVBAoMC0dhaWEtWCBUZXN0MRwwGgYDVQQDDBNmbG9uZG9ub2guZ2l0aHViLmlvMB4XDTI1MTAxNTEwMTQxMVoXDTI2MTAxNTEwMTQxMVowQTELMAkGA1UEBhMCREUxFDASBgNVBAoMC0dhaWEtWCBUZXN0MRwwGgYDVQQDDBNmbG9uZG9ub2guZ2l0aHViLmlvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlqTk3Jq838M0D4Iskmw6hJcDNcIYMu0vnt+CNRem66BcGnTJq00GRRZMjrq5gd/G5XxVrhMByb5p0F/muBJBgflxWZV4irtj3zTXlzsUmdX8j8vJoAnxq7JXKliP89z8O1856OJb0o2OV7Fz4F03JUSrmzsuNWwZcu/n5eI0u0KW+gMPfsmWrD5KNsKWi34uOPYSwAHt5ohtBi+dfyz1kq499TIe6+Hkd3Xjz9/O7Ewn7nyuqmfIVBOG7ugRjajN0QbRS40L1qat9QFDv7L6uee1PCHLU+QtIJ018g8bE1spiXCE4D+/kssyOb1OvBkLAh1LgEsy7z3V0TT8CWlSyQIDAQABoxMwETAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAcwq02IS337FnXl/CyKYcsQua8mD5HlmPduDlwINZKBPUr7VvTlfT9utOAQeaFSG2A83+/YUsGbuCH0R5o4YRfiXTdU42GA3+RLUGhjTay6YKjuLrZH6YQMg6x8zm2qQ8SFeCeXBbu+ZzNqjxe5NPX4YUhu3udwAqzoqSPHqeipkoQ44wyIc2VgJHJiW83ziEJs/Z3snejM0RRU7yXkX63wNplaR3m80Qeld8RUEuxshCOYPpS/+34ASmHDbPseTOHvWb4kDEWsRqqBz2mv6rZbvjhDokUf/qqLeHSBnIOqSIr4CcZLozpmYmB6eXVgPLdQssN/E31bUESMuwPFBuE"
-      ]
+        "e": "AQAB",
+        "alg":"RS256",
+        "x5u": "https://flondonoh.github.io/gaiax_technicaladvisor_exercise/.well-known/x509Certificate.pem"
+      }
     }
-  ]
+  ],
+  "assertionMethod":[
+      "did:web:flondonoh.github.io:gaiax_technicaladvisor_exercise#X509-JWK2020"
+   ]
 }
